@@ -1,3 +1,29 @@
 TrajectoryPlannerROS:
+ # The base_local_planner is responsible for computing velocity commands to send to the mobile base of the robot given a high-level plan
+  max_vel_x: 4.0
+  min_vel_x: 0.1
+  max_vel_theta: 1.0
+  min_in_place_vel_theta: 3.1
+
+  acc_lim_theta: 3.1
+  acc_lim_x: 1.0
+  acc_lim_y: 0
+
+  # robot how close to the given path
+  path_distance_bias: 500
+  # How much attempt to reach the local goal
+  goal_distance_bias: 420
+  # How much attempt to avoid obstacles
+  occdist_scale: 0.95
+
+
+ # The tolerance in radians for the controller in yaw/rotation when achieving its goal  
+  yaw_goal_tolerance: .12
 
   holonomic_robot: false
+
+  meter_scoring: true
+
+  publish_cost_grid_pc: true
+
+  controller_frequency: 10
