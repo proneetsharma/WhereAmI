@@ -2,7 +2,7 @@ This package uses the **AMCL(Adaptive Monte Carlo Localization)** in ROS to loca
 
 To start with autonomous navigation there is a designed simulated differential drive robot that satisfy the necessary prerequisites: tf tree, odometry, laserscaner and base controller. To move the robot its own the package is using the **ROS's Navigation Stack.**
 
-###Steps involve in developing this package-
+### Steps involve in developing this package-
 * Creating a differential drive robot model(urdf and gazebo plugins).
 * Plug in the ROS Navigation Stack.
 * Parameter tunning.
