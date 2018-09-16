@@ -2,7 +2,7 @@ This package uses the **AMCL(Adaptive Monte Carlo Localization)** in ROS to loca
 
 To start with autonomous navigation there is a need of designed simulated differential drive robot that satisfy the necessary prerequisites: tf tree, odometry, laserscaner and base controller. To move the robot its own the package is using the **ROS's Navigation Stack.**
 
-###Steps involve in developing this package-
+### Steps involve in developing this package-
 * Creating a differential drive robot model(urdf and gazebo plugins).
 * Plug in the ROS Navigation Stack.
 * Parameter tunning.
@@ -16,7 +16,7 @@ In **amcl.launch** file, three nodes are added. First node will load the saved m
 ![alt text](https://github.com/proneetsharma/WhereAmI/blob/master/media/GlobalAndLocalCostmap.png)
 
 
-##Steps to launch the package-
+## Steps to launch the package-
 
 #### Step 1. Clone Package
 ```sh
@@ -37,9 +37,9 @@ $ roslaunch udacity_bot amcl.launch
 ```
 
 Click on **Goal Pose** in rviz and give robot a goal position on the map.
-![alt text](https://github.com/proneetsharma/WhereAmI/blob/master/media/FinalPosition.png)
-
-The Robot will start navigating in the goal pose direction.
 ![alt text](https://github.com/proneetsharma/WhereAmI/blob/master/media/GoalPosition.png)
+
+The Robot will start navigating in the goal pose direction and finally reach to the goal position.
+![alt text](https://github.com/proneetsharma/WhereAmI/blob/master/media/FinalPosition.png)
 
 
