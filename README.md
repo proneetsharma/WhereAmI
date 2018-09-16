@@ -26,8 +26,8 @@ $ https://github.com/proneetsharma/WhereAmI.git
 #### Step 2. Build package
 ```sh
 $ cd ..
-Change the name of package WhereIAm to udacity\_bot
-$ catkin\_make
+Change the name of package WhereIAm to udacity_bot
+$ catkin_make
 $ source devel/setup.zsh
 ```
 #### Step 3. Launch Nodes
